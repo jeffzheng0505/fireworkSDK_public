@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RNGAMSupport'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'FireworkVideoGAMSupport'
 
   s.homepage         = 'https://github.com/loopsocial/firework_ios_sdk_gam_support'
