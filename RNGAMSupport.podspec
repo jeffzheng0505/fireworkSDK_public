@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author           = "Loop Now Technologies, Inc."
   s.platform         = :ios, "11.0"
   s.module_name      = "FireworkVideoGAMSupport"
-  s.source           = { :http => "https://github.com/loopsocial/firework_ios_sdk_gam_support/releases/download/v#{s.version}/FireworkVideoGAMSupport-v#{s.version}.xcframework.zip" }
+  s.source           = { :http => "https://github.com/loopsocial/firework_ios_sdk_gam_support/releases/download/v0.1.0/FireworkVideoGAMSupport-v0.1.0.xcframework.zip" }
 
   s.preserve_paths           = "FireworkVideoGAMSupport.xcframework"
   s.ios.vendored_frameworks  = "FireworkVideoGAMSupport.xcframework"
