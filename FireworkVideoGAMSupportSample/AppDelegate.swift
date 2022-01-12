@@ -4,9 +4,9 @@
 //
 
 import UIKit
-import GoogleInteractiveMediaAds
+import GoogleMobileAds
 import FireworkVideo
-import FireworkVideoGIMASupport
+import FireworkVideoGAMSupport
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,9 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FireworkVideoSDK.initializeSDK()
-        FireworkVideoGIMASupportSDK.enableIMAAds()
+        FireworkVideoGAMSupportSDK.initializeSDK()
         
         print("FireworkVideo SDK Version: \(FireworkVideoSDK.version)")
+        print("FireworkVideoGAMSupport SDK Version: \(FireworkVideoGAMSupportSDK.sdkVersion)")
+        print("GoogleMobileAds SDK Version: \(FireworkVideoGAMSupportSDK.mobileAdsSDKVersion)")
+        
+        print("Is GoogleMobileAds SDK supported?: \(FireworkVideoGAMSupportSDK.isMobileAdsSDKVersionSupported)")
         
         return true
     }
